@@ -33,11 +33,20 @@ function Square({value, onSquareClick}) {
   if (winner) {
     status = 'Winner: ' + winner;
   } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    status = 'Now Turn: ' + (xIsNext ? 'X' : 'O');
   }
 
   return (
     <>
+    <div className="heading"><h1>Tic-tac-toe</h1></div>
+    <div>
+      <h2>Rules:</h2>
+    <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+    <li>You are X , your friend  is O . Players take turns putting their marks in empty squares.</li>
+    <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+    <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li></div>
+    <div className="Board">
+      
       <div className="status">{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -54,6 +63,7 @@ function Square({value, onSquareClick}) {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
+    </div>
     </>
   );
 }

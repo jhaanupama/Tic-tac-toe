@@ -3,7 +3,7 @@
   
 }
 .Board{
-  margin-top: 180px;
+  margin-top: 80px;
   margin-left: 33em;
 }
 * {
@@ -40,15 +40,15 @@ body {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
-  line-height: 54px;
-  height: 54px;
+  line-height: 84px;
+  height: 84px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 54px;
+  width: 84px;
 }
 
 .board-row:after {
