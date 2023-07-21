@@ -1,5 +1,5 @@
+Tic Tac Toe Game - React
 
-#Tic Tac Toe Game - React
 This simple Tic Tac Toe game built using React allows two players to play against each other and determine the winner. The classic Tic Tac Toe (also known as Noughts and Crosses) game is a 3x3 grid where players take turns to place their markers (X or O) in an attempt to get three in a row, either horizontally, vertically, or diagonally.
 
 Features
